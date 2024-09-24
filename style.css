@@ -4,8 +4,6 @@
 }
 
 
-
-
 .Navbar .img {
     width: 150px;
     height: 150px;
@@ -68,18 +66,19 @@
 }
 
 .section button {
-    background: #E8C19F;
-    color: white;
-    padding: 12px 30px;
+    background: #E8C19F !important;
+    color: #843F0F !important;
+    font-weight: 600;
+    padding: 10px 40px;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 18px;
 }
 
 .section button:hover {
-    background-color: #0056b3;
-    /* Darker blue on hover */
+    background-color: #843F0F;
+    color: #E8C19F;
 }
 
 .section img {
@@ -113,8 +112,11 @@
 
 .section .imgd h1 {
     font-size: 48px;
+    color: #000000;
     /* color: #007bff; */
     /* Blue color for numbers */
+    font-size: 70px;
+    font-weight: 400;
 }
 
 .section .imgd p {
@@ -122,31 +124,68 @@
     color: #333;
 }
 
-/* Another image styling */
 
-/* Media queries for responsiveness */
+
+@media (max-width: 450px) {
+    .section h1 {
+        font-size: 40px;
+        margin-top: 0px;
+    }
+
+    .section .imgd h1 {
+        font-size: 35px !important;
+    }
+
+    .section .back1 {
+        position: absolute !important;
+        top: 40% !important;
+        left: 45% !important;
+    }
+}
+
+
 @media (max-width: 768px) {
 
-    .col-md-8,
+    .section h1 {
+        font-size: 40px;
+        margin-top: 0px;
+    }
+
+    .section .imgd h1 {
+        font-size: 35px !important;
+    }
+
+    .section .back1 {
+        position: absolute !important;
+        top: 40% !important;
+        left: 45% !important;
+    }
+
+    .section button{
+        font-size: 15px !important;
+    }
+/* 
+    .section .back1{
+        width:60px;
+        height:60px;
+    } */
+
+    
+
+     .col-md-8,
     .col-md-4,
     .col-md-6 {
         width: 100%;
-        /* Make columns stack on smaller screens */
         margin-bottom: 20px;
     }
 
     .imgd {
         flex-direction: column;
-        /* Stack the statistics vertically */
         align-items: center;
+        display: none;
     }
 
-    .imgd div {
-        margin-bottom: 20px;
-        /* Add space between stats on small screens */
-    }
 }
-
 
 
 
@@ -203,6 +242,21 @@
 }
 
 
+@media (max-width: 450px) {
+
+    .section1 .swiper {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+   
+
+}
+
+
+
 /* /............../ */
 
 
@@ -227,18 +281,23 @@
 }
 
 
+@media (max-width: 450px) {
+
+    .section2 h1 {
+        font-size: 45px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 /* /............../ */
-
-
-/* 
-
-.section3 .img{
-    background-image: url(img/fg.jpeg);
-    background-size:cover;
-    height: 450px;
-
-} */
 
 
 .section3 .content h2 {
@@ -253,15 +312,12 @@
 
 .section3 .other {
     background-color: #843F0F;
-    /* Adjust color to match the image */
     padding: 200px;
     border-radius: 15px;
     width: 100%;
     height: 250px;
     max-width: 1300px;
-    /* Set max width to keep the design responsive */
     margin: 20px auto;
-    /* Center the container */
     position: relative;
     overflow: hidden;
 }
@@ -279,13 +335,40 @@
     width: 100%;
     height: 100%;
     background-image: url('img/fg.jpeg');
-    /* Replace with your image */
     background-size: cover;
     background-position: center;
     opacity: 0.3;
-    /* Adjust opacity to make text readable */
     z-index: 0;
 }
+
+
+@media (max-width: 450px) {
+
+    .section3 .other {
+        max-width: 100px !important;
+    }
+
+    .section3 .content {
+        position: absolute;
+        left: 0%;
+        bottom: 30%;
+    }
+
+    .section3 .content h2 {
+        font-size: 30px;
+    }
+
+    .section3 .content p {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+
+}
+
 
 
 /* /............../ */
@@ -309,6 +392,15 @@
     line-height: 35px !important;
     color: #545454 !important;
 }
+
+
+@media (max-width: 450px) {
+
+    .section5 .our h1 {
+        font-size: 45px !important;
+    }
+}
+
 
 
 /* /............../ */
@@ -337,6 +429,16 @@
     font-weight: 400 !important;
     color: #545454 !important;
 }
+
+
+@media (max-width: 450px) {
+
+    .section6 .our h1 {
+        font-size: 45px !important;
+    }
+}
+
+
 
 
 /* /............../ */
@@ -485,7 +587,18 @@
 }
 
 
+
+@media (max-width: 450px) {
+
+    .section7 .Testimonials .Tes h1 {
+        font-size: 50px !important;
+    }
+}
+
+
+
 /* /............../ */
+
 
 .section8 img {
     border-radius: 30px !important;
@@ -542,8 +655,6 @@
     color: #843F0F !important;
     border: 1px solid #843F0F !important;
 }
-
-
 
 
 @media (max-width: 450px) {
